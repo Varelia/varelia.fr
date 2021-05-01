@@ -2,11 +2,9 @@ import React from 'react'
 import './style/index.scss'
 
 
-function App() {
-  return (
-      <>
-      </>
-  )
-}
+const App: React.FC = () => (
+  <>
+  </>
+)
 
 export default App
