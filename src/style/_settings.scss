@@ -5,19 +5,19 @@
 
 $primaryPadding: 15em;
 
-$primaryFont: "Poppins", sans-serif;
-$secondaryFont: "Roboto", sans-serif;
+$primaryFont: "Sen", sans-serif;
 
 $darkColor: #404040;
-$lighterOrangeColor: #FC8E06;
-$darkerOrangeColor: #F06520;
+$lighterVioletColor: #915dd4;
+$darkerVioletColor: #7a4cb1;
 $whiteColor: #ffffff;
 
 $boxShadow: rgba(0, 0, 0,.05) 0 0px 20px;
 
 html {
   font-size: 15px;
-  font-family: $secondaryFont;
+  font-family: $primaryFont;
+  font-weight: 700;
   background-color: #EFEFEF;
 }
 * {
