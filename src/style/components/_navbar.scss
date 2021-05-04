@@ -1,0 +1,15 @@
+.header-navbar--menu {
+  background: rgba(0, 0, 0, .2);
+  padding: 1rem;
+
+  li > a, li > label {
+    color: $whiteColor;
+    display: flex;
+    align-items: center;
+
+    svg {
+      font-size: 1.5em;
+      margin-right: 1rem;
+    }
+  }
+}
