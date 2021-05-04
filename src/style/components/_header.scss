@@ -13,3 +13,11 @@
     padding: 2rem 0;
   }
 }
+
+@media screen and (min-width: $breakpoint-tablet) {
+  .main-header--body img { width: 40vw; }
+}
+
+@media screen and (min-width: $breakpoint-computer) {
+  .main-header--body img { width: 300px; }
+}

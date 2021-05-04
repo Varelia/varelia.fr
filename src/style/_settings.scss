@@ -11,8 +11,12 @@ $darkColor: #404040;
 $lighterVioletColor: #915dd4;
 $darkerVioletColor: #7a4cb1;
 $whiteColor: #ffffff;
+$breakpoint-tablet: 769px;
+$breakpoint-computer: 1200px;
 
-$boxShadow: rgba(0, 0, 0,.05) 0 0px 20px;
+$text-shadow: 0 0 5px rgba(0, 0, 0, .5);
+
+//$boxShadow: rgba(0, 0, 0,.05) 0 0px 20px;
 
 html {
   font-size: 15px;
@@ -30,3 +34,9 @@ html {
   text-decoration: none;
 }
 
+
+@media (min-width: $breakpoint-tablet) {
+  html {
+    font-size: 16px;
+  }
+}
