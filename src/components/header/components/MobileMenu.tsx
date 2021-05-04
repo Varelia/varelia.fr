@@ -13,7 +13,7 @@ const MobileMenu: React.FC = () => (
             <ul className="mobile-menu--menu">
                 <li><a href="/#">Accueil</a></li>
                 <li><a href="/#">Vote</a></li>
-                <li><a href="/#">Boutique</a></li>
+                <li><a href="/#">Discord</a></li>
             </ul>
         </section>
         <footer className="mobile-menu--footer">

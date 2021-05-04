@@ -11,6 +11,9 @@ const NavBar: React.FC = () => (
                         <FontAwesomeIcon icon={['fas', 'bars']} /> Accueil
                     </label>
                 </li>
+                <li><a href="/#">Accueil</a></li>
+                <li><a href="/#">Vote</a></li>
+                <li><a href="/#">Discord</a></li>
             </ul>
             <a className="header-navbar--menu--shop-btn" href="/#">Boutique</a>
         </div>
