@@ -12,6 +12,7 @@ const NavBar: React.FC = () => (
                     </label>
                 </li>
             </ul>
+            <a className="header-navbar--menu--shop-btn" href="/#">Boutique</a>
         </div>
 
         <input id="close-mobile-menu" type="checkbox" hidden/>

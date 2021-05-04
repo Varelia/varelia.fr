@@ -1,4 +1,7 @@
 .header-navbar--menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background: rgba(0, 0, 0, .2);
   padding: 1rem;
 
@@ -12,4 +15,14 @@
       margin-right: 1rem;
     }
   }
+}
+
+.header-navbar--menu--shop-btn {
+  color: $whiteColor;
+  background-color: $lighterVioletColor;
+
+  border-radius: 2rem;
+  padding: .5rem 2rem;
+
+  text-transform: uppercase;
 }
