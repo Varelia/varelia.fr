@@ -2,10 +2,17 @@
   background-image: linear-gradient(rgba(154, 93, 212, .5), rgba(154, 93, 212, .5)) ,url(../../assets/images/background.jpg);
   background-position: center;
   background-size: cover;
+  border-bottom: 2px solid rgba(255, 255, 255, .3);
+
+  &:after {
+    content: '';
+  }
 }
 
 .main-header--body {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   img {
     width: 60vw;
@@ -14,10 +21,59 @@
   }
 }
 
+.main-header--body--item { display: none; }
+
+.main-header--body--item {
+  align-items: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.25em;
+  text-shadow: $text-shadow;
+
+  small {
+    display: block;
+    font-size: 1rem;
+    color: #ddd;
+    font-weight: 700;
+  }
+
+  & > svg {
+    font-size: 4rem;
+    filter: drop-shadow($text-shadow);
+    color: $goldColor;
+  }
+  p {
+    color: $goldColor;
+    font-size: 1.5rem;
+    font-weight: 800;
+  }
+  &:first-child p { padding-left: 1rem; }
+  &:last-child p { padding-right: 1rem; }
+  &:first-child small > svg { margin-right: .5rem; }
+  &:last-child small > svg {
+    margin-left: .5rem;
+    border-radius: 50%;
+    box-shadow: 0 0 0 0.2em rgba(46, 204, 113, .5);
+    color: #2ecc71;
+    font-size: .8em;
+  }
+  &:last-child p { text-align: right; }
+}
+
 @media screen and (min-width: $breakpoint-tablet) {
   .main-header--body img { width: 40vw; }
 }
 
 @media screen and (min-width: $breakpoint-computer) {
-  .main-header--body img { width: 300px; }
+  .main-header--body {
+    padding: 0 20vw;
+    justify-content: space-between;
+
+    img {
+      width: 300px;
+      padding: 5rem 0;
+    }
+  }
+
+  .main-header--body--item { display: flex; }
 }
