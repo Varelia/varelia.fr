@@ -1,5 +1,6 @@
 import React from 'react'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import {Link} from 'react-router-dom'
 
 const MobileMenu: React.FC = () => (
     <div className="mobile-menu">
@@ -11,9 +12,9 @@ const MobileMenu: React.FC = () => (
         </header>
         <section className="mobile-menu--body">
             <ul className="mobile-menu--menu">
-                <li><a href="/#">Accueil</a></li>
-                <li><a href="/#">Vote</a></li>
-                <li><a href="/#">Discord</a></li>
+                <li><Link to="/">Accueil</Link></li>
+                <li><Link to="/vote">Vote</Link></li>
+                <li><Link to="/discord">Discord</Link></li>
             </ul>
         </section>
         <footer className="mobile-menu--footer">

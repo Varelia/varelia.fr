@@ -1,6 +1,7 @@
 import React from 'react'
 import MobileMenu from './MobileMenu'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import { Link } from 'react-router-dom'
 
 const NavBar: React.FC = () => (
     <nav className="header-navbar">
@@ -11,9 +12,9 @@ const NavBar: React.FC = () => (
                         <FontAwesomeIcon icon={['fas', 'bars']} /> Accueil
                     </label>
                 </li>
-                <li><a href="/#">Accueil</a></li>
-                <li><a href="/#">Vote</a></li>
-                <li><a href="/#">Discord</a></li>
+                <li><Link to="/">Accueil</Link></li>
+                <li><Link to="/vote">Vote</Link></li>
+                <li><Link to="/discord">Discord</Link></li>
             </ul>
             <a className="header-navbar--menu--shop-btn" href="/#">Boutique</a>
         </div>
