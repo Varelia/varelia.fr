@@ -7,6 +7,7 @@ import {
     Switch,
     Route
 } from 'react-router-dom'
+import Home from './pages/home'
 
 const App: React.FC = () => (
     <BrowserRouter>
@@ -14,7 +15,7 @@ const App: React.FC = () => (
 
         <Switch>
             <Route path="/">
-
+                <Home />
             </Route>
         </Switch>
     </BrowserRouter>
