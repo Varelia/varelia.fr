@@ -2,3 +2,7 @@
 @import "components/navbar";
 @import "components/mobile-menu";
 @import "components/header";
+
+html {
+  height: 200vh; // for test purpose only
+}

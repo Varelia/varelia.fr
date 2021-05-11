@@ -37,12 +37,17 @@
   padding: .5rem 2rem;
 
   text-transform: uppercase;
+  box-shadow: 0 0 0 5px #ffd6707f;
+  transition: .2s background-color, .2s box-shadow;
 
   svg {
     margin-right: .5rem;
     filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, .2));
   }
-  &:hover { background-color: $darkerYellowColor; }
+  &:hover {
+    box-shadow: 0 0 0 5px rgba(235, 195, 99, .5), 0 0 20px 0 rgba(0, 0, 0, .5);
+    background-color: $darkerYellowColor;
+  }
 }
 
 @media screen and (min-width: $breakpoint-tablet) {
