@@ -1,7 +1,6 @@
 import React from 'react'
 import NavBar from './components/NavBar'
 import logo from '../../assets/images/varelia.png'
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 
 const Header: React.FC = () => (
     <header className="main-header">
