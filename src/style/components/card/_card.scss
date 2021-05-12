@@ -1,0 +1,15 @@
+.card {
+  background-color: $whiteColor;
+  border-radius: 2rem;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  min-height: 10vh;
+}
+
+.card--title {
+  background-color: #ffd670;
+  border-radius: 2rem;
+  padding: .5rem 1rem;
+  color: #8f722c;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+}
