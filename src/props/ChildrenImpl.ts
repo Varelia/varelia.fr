@@ -1,5 +1,3 @@
-import React from 'react'
-
 export default interface ChildrenImpl {
-    children: React.ReactElement | React.ReactElement[]
+    children: JSX.Element | JSX.Element[]
 }
