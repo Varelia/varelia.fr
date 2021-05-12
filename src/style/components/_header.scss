@@ -2,13 +2,14 @@
   background-image: linear-gradient(0deg, #404040, transparent 10vh), linear-gradient(rgba(255, 218, 213, .3), rgba(255, 218, 213, .3)) ,url(../../assets/images/background.jpg);
   background-position: center;
   background-size: cover;
+  padding-bottom: 10rem;
   //border-bottom: 2px solid rgba(255, 255, 255, .3);
 }
 .main-header--body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: calc(100vh - 4.5rem);
+  padding-top: 5rem;
 }
 
 .main-header--item {
