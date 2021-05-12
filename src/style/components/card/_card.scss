@@ -1,15 +1,30 @@
 .card {
   background-color: $whiteColor;
-  border-radius: 2rem;
-  padding: 1rem;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
   margin-bottom: 2rem;
   min-height: 10vh;
 }
 
 .card--title {
-  background-color: #ffd670;
-  border-radius: 2rem;
-  padding: .5rem 1rem;
-  color: #8f722c;
-  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+  padding-bottom: .5rem;
+  display: flex;
+
+  h1 {
+    color: #8f722c;
+  }
+
+  .card--title--item:first-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 1rem;
+
+    & > img, & > svg {
+      height: 3.5em;
+    }
+    & > img {
+      border-radius: 50%;
+    }
+  }
 }

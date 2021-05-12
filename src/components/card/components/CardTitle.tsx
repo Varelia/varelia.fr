@@ -2,11 +2,19 @@ import React from 'react'
 
 interface CardTitleImpl {
     title: string
+    children?: JSX.Element
+    illustration? : JSX.Element
 }
 
-const CardTitle: React.FC<CardTitleImpl> = ({title}) => (
+const CardTitle: React.FC<CardTitleImpl> = ({title, children, illustration}) => (
     <header className="card--title">
-        <h1>{title}</h1>
+        <div className="card--title--item">
+            {illustration}
+        </div>
+        <div className="card--title--item">
+            <h1>{title}</h1>
+            {children}
+        </div>
     </header>
 )
 
