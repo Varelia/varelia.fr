@@ -12,8 +12,13 @@ $goldColor: #e5c86e;
 $lighterYellowColor: #ffd670;
 $darkerYellowColor: #ecc463;
 $whiteColor: #ffffff;
+
 $breakpoint-tablet: 769px;
 $breakpoint-computer: 1200px;
+
+$padding-phone: 1rem;
+$padding-tablet: calc(50vw - 350px);
+$padding-computer: calc(50vw - 550px);
 
 $text-shadow: 0px 0px 10px rgba(0, 0, 0, .2);
 
