@@ -1,0 +1,19 @@
+.container {
+  margin-top: -10rem;
+  padding: 0 $padding-phone;
+}
+
+@media screen and (min-width: $breakpoint-tablet) {
+  .container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 2rem;
+    padding: 0 $padding-tablet;
+  }
+}
+
+@media screen and (min-width: $breakpoint-computer) {
+  .container {
+    padding: 0 $padding-computer;
+  }
+}
