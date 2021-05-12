@@ -6,7 +6,7 @@ import Article from '../../components/article'
 const Home: React.FC = () => (
     <Container>
         <ContainerItem>
-            <Article title="VARÉLIA SAISON 3 — RÉSURRECTION"/>
+            <Article title="VARÉLIA SAISON 3"/>
         </ContainerItem>
         <ContainerItem>
             <Card>
