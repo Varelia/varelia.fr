@@ -18,8 +18,26 @@
   }
 
   li > a {
-    padding-right: 3rem;
+    position: relative;
+    margin-right: 3rem;
     text-shadow: $text-shadow;
+  }
+
+  li > a:after {
+    content:  '';
+    position: absolute;
+    bottom: -10px;
+    left: calc(50% + 2px);
+    min-width: 0;
+    height: 4px;
+    background: #ffffff7f;
+    border-radius: 4px;
+    transition: .2s;
+  }
+
+  li > a:hover:after {
+    left: 0;
+    min-width: calc(100% + 4px);
   }
 
   .header-navbar--menu--mobile ~ li { display: none; }
