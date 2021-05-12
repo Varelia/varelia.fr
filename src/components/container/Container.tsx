@@ -1,7 +1,7 @@
 import React from 'react'
-import ChildrenPropsImpl from '../../props/ChildrenPropsImpl'
+import ChildrenImpl from '../../props/ChildrenImpl'
 
-const Container: React.FC<ChildrenPropsImpl> = ({children}) => (
+const Container: React.FC<ChildrenImpl> = ({children}) => (
     <section className="container">
         {children}
     </section>

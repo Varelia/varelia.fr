@@ -1,7 +1,7 @@
 import React from 'react'
-import ChildrenPropsImpl from '../../props/ChildrenPropsImpl'
+import ChildrenImpl from '../../props/ChildrenImpl'
 
-const Card: React.FC<ChildrenPropsImpl> = ({children}) => (
+const Card: React.FC<ChildrenImpl> = ({children}) => (
     <div className="card">
         {children}
     </div>

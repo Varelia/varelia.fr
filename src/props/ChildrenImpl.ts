@@ -1,5 +1,5 @@
 import React from 'react'
 
-export default interface ChildrenPropsImpl {
+export default interface ChildrenImpl {
     children: React.ReactElement | React.ReactElement[]
 }
