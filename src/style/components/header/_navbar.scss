@@ -70,7 +70,7 @@
 
 @media screen and (min-width: $breakpoint-tablet) {
   .header-navbar--menu {
-    padding: 1rem calc(50vw - 350px);
+    padding: 1rem $padding-tablet;
 
     ul { display: flex; }
     li.header-navbar--menu--mobile { display: none; }
@@ -78,5 +78,7 @@
   }
 }
 @media screen and (min-width: $breakpoint-computer) {
-  .header-navbar--menu { padding: 1rem calc(50vw - 500px); }
+  .header-navbar--menu {
+    padding: 2rem $padding-computer 0;
+  }
 }
