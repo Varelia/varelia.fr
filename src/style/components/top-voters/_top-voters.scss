@@ -1,0 +1,30 @@
+.voters {
+  display: flex;
+  flex-direction: column;
+}
+
+.voter {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  margin: .5rem -1rem;
+  padding: .5rem 1rem;
+
+  background: #f6f6f6;
+  border-radius: 1rem;
+
+  & > img {
+    border-radius: 50%;
+    margin-bottom: auto;
+  }
+
+  &:nth-child(1) p:first-child { color: #D4AF37; }
+  &:nth-child(2) p:first-child { color: #A97142; }
+  &:nth-child(3) p:first-child { color: #AAA9AD; }
+}
+
+.voter--body > p {
+  color: $darkColor;
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+}

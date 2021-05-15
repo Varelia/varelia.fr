@@ -2,6 +2,7 @@ import React from 'react'
 import Container, {ContainerItem} from '../../components/container'
 import Article from '../../components/article'
 import OnlinePlayers from '../../components/online-players'
+import TopVoters from '../../components/top-voters'
 
 const Home: React.FC = () => (
     <Container>
@@ -10,6 +11,7 @@ const Home: React.FC = () => (
         </ContainerItem>
         <ContainerItem>
             <OnlinePlayers onlinePlayers={375} maxPlayers={1000}/>
+            <TopVoters />
         </ContainerItem>
     </Container>
 )
