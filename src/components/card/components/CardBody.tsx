@@ -3,10 +3,11 @@ import ChildrenImpl from '../../../props/ChildrenImpl'
 
 interface CardBodyImpl extends ChildrenImpl {
     style?: CSSProperties
+    className?: string
 }
 
-const CardBody: React.FC<CardBodyImpl> = ({children, style = {}}) => (
-    <div className="card--body" style={style}>
+const CardBody: React.FC<CardBodyImpl> = ({children, style = {}, className = ''}) => (
+    <div className={`card--body ${className}`} style={style}>
         {children}
     </div>
 )
