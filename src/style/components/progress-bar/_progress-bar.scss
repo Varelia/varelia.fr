@@ -1,0 +1,27 @@
+.progress-bar {
+  position: relative;
+  width: 100%;
+  height: 2rem;
+  background: #f6f6f6;
+  border-radius: 1rem;
+
+  .progress-bar--inside {
+    height: 100%;
+    background: $darkerYellowColor;
+    border-radius: 1rem;
+    box-shadow: 0 1rem 0 0 $lighterYellowColor inset, 0 0 0 5px #fff;
+  }
+
+  .progress-bar--body {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 1rem;
+    color: $darkColor;
+  }
+}
