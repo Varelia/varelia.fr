@@ -30,3 +30,8 @@
     }
   }
 }
+
+.card--body > p {
+  color: $darkColor;
+  padding: 0 .5rem 1rem;
+}

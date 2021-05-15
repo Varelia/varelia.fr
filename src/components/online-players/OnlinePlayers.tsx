@@ -13,7 +13,7 @@ const OnlinePlayers: React.FC<OnlinePlayersImpl> = ({onlinePlayers, maxPlayers})
     return <Card>
         <CardTitle title="Rejoignez-nous"/>
         <CardBody style={{margin: "0 -.5rem"}}>
-            <p className="online-players">Rejoignez-nous en utilisant l'IP play.varelia.fr</p>
+            <p>Rejoignez-nous en utilisant l'IP play.varelia.fr</p>
             <ProgressBar percent={percent}>
                 {onlinePlayers} joueurs en ligne
             </ProgressBar>
