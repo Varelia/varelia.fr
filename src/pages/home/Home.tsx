@@ -1,7 +1,7 @@
 import React from 'react'
 import Container, {ContainerItem} from '../../components/container'
-import Card from '../../components/card'
 import Article from '../../components/article'
+import OnlinePlayers from '../../components/online-players'
 
 const Home: React.FC = () => (
     <Container>
@@ -9,9 +9,7 @@ const Home: React.FC = () => (
             <Article title="VARÉLIA SAISON 3"/>
         </ContainerItem>
         <ContainerItem>
-            <Card>
-                <></>
-            </Card>
+            <OnlinePlayers onlinePlayers={375} maxPlayers={1000}/>
         </ContainerItem>
     </Container>
 )
