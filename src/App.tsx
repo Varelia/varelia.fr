@@ -7,12 +7,16 @@ import {
     Route
 } from 'react-router-dom'
 import Home from './pages/home'
+import Vote from './pages/vote'
 
 const App: React.FC = () => (
     <BrowserRouter>
         <Header />
 
         <Switch>
+            <Route path="/vote">
+                <Vote />
+            </Route>
             <Route path="/">
                 <Home />
             </Route>
