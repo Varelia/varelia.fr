@@ -1,19 +1,19 @@
 import React from 'react'
 import Container, {ContainerItem} from '../../components/container'
-import Article from '../../components/article'
 import OnlinePlayers from '../../components/online-players'
-import TopVoters from '../../components/top-voters'
+import {default as VoteComponent} from '../../components/vote'
+import DiscordWidget from '../../components/discord-widget'
 
-const Home: React.FC = () => (
+const Vote: React.FC = () => (
     <Container>
         <ContainerItem>
-            <Article title="VARÉLIA SAISON 3"/>
+            <VoteComponent />
         </ContainerItem>
         <ContainerItem>
             <OnlinePlayers onlinePlayers={375} maxPlayers={1000}/>
-            <TopVoters />
+            <DiscordWidget id="835439488369033266" />
         </ContainerItem>
     </Container>
 )
 
-export default Home
+export default Vote

@@ -16,7 +16,7 @@
 
 .mobile-menu--header {
   position: relative;
-  background-image: linear-gradient(rgba(154, 93, 212, .5), rgba(154, 93, 212, .5)) ,url(../../assets/images/background.jpg);
+  background-image: linear-gradient(rgba(72, 60, 30, .7) -20rem, transparent) ,url(../../../assets/images/background_spawn.jpg);
   background-position: center;
   background-size: cover;
   border-bottom: 4px solid rgba(255, 255, 255, .5);
@@ -50,8 +50,9 @@
 .mobile-menu--menu {
   li { padding: 1rem 0 1rem 2rem; }
   a {
+    display: flex;
+    align-items: center;
     color: $whiteColor;
-    font-size: 1.2em;
   }
 }
 

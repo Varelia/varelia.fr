@@ -1,0 +1,32 @@
+.leaderboard--top-bar {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+}
+
+.leaderboard--top-bar--item {
+  min-width: 7rem;
+
+  & > * {
+    text-align: center;
+    margin: auto;
+    display: block;
+  }
+  &:first-child, &:last-child { padding-top: 4rem; }
+  & > p > img {
+    width: 2.5rem;
+    display: block;
+    margin: auto;
+  }
+  & > img {
+    border-radius: 50%;
+    margin: 12px auto;
+  }
+
+  &:nth-child(1) > img { box-shadow: 0 0 0 4px #A97142, 0 0 0 8px #A971425f; }
+  &:nth-child(2) > img { box-shadow: 0 0 0 4px #D4AF37, 0 0 0 8px #D4AF375f; }
+  &:nth-child(2) { align-self: flex-start;  }
+  &:nth-child(3) > img { box-shadow: 0 0 0 4px #AAA9AD, 0 0 0 8px #AAA9AD5f; }
+  & > .votes { color: $darkerYellowColor; }
+  & > .nickname { color: $darkColor; }
+}

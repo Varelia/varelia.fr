@@ -1,12 +1,12 @@
 import React from 'react'
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {Link} from 'react-router-dom'
+import {CloseTwoTone} from '@material-ui/icons'
 
 const MobileMenu: React.FC = () => (
     <div className="mobile-menu">
         <header className="mobile-menu--header">
             <label htmlFor="close-mobile-menu" className="mobile-menu--close">
-                <FontAwesomeIcon icon={['fas', 'times']} />
+                <CloseTwoTone />
             </label>
             <p>Menu</p>
         </header>

@@ -1,0 +1,40 @@
+.article--credentials {
+  color: #797979;
+
+  small {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.article--body {
+  color: $darkColor;
+  padding: 1rem;
+  background: #f6f6f6;
+  border-radius: 1rem;
+  margin: .5rem -1rem;
+
+  & > p {
+    margin-bottom: .5rem;
+  }
+}
+
+.article--footer {
+  & > a {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: $lighterYellowColor;
+    width: fit-content;
+    margin-left: auto;
+    padding: .5rem 1rem;
+    color: $whiteColor;
+    border-radius: 2rem;
+    text-shadow: $text-shadow;
+    transition: .2s background-color;
+  }
+
+  & > a:hover {
+    background-color: $darkerYellowColor;
+  }
+}

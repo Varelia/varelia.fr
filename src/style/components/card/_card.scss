@@ -1,0 +1,45 @@
+.card {
+  background-color: $whiteColor;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  margin-bottom: 2rem;
+  min-height: 10vh;
+}
+
+.card--title {
+  padding-bottom: .5rem;
+  display: flex;
+
+  h1 {
+    font-size: 1.3rem;
+    color: #8f722c;
+    text-transform: uppercase;
+  }
+
+  .card--title--item:first-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 1rem;
+
+    & > img, & > svg {
+      height: 3.5em;
+    }
+    & > img {
+      border-radius: 50%;
+    }
+  }
+}
+
+.card--body > p {
+  color: $darkColor;
+  padding: 0 .5rem 1rem;
+}
+
+.wrapped-paragraph {
+  color: #404040;
+  padding: 1rem;
+  background: #f6f6f6;
+  border-radius: 1rem;
+  margin: .5rem -1rem;
+}

@@ -1,0 +1,21 @@
+.main-header {
+  background-image: linear-gradient(0deg, #404040, transparent 10vh), linear-gradient(rgba(72, 60, 30, .7) -20rem, transparent) ,url(../../../assets/images/background_spawn.jpg);
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 10rem;
+  //border-bottom: 2px solid rgba(255, 255, 255, .3);
+}
+.main-header--body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.main-header--item {
+
+  & > .logo {
+    width: calc(100% - 2rem);
+    padding-bottom: 2rem;
+  }
+}
