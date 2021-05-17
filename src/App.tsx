@@ -17,6 +17,10 @@ const App: React.FC = () => (
             <Route path="/vote">
                 <Vote />
             </Route>
+            <Route path="/discord" component={() => {
+                window.location.href = "https://discord.gg/eMGYg3WvVR"
+                return null
+            }} />
             <Route path="/">
                 <Home />
             </Route>
