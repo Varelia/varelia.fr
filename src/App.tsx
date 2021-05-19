@@ -8,6 +8,7 @@ import {
 } from 'react-router-dom'
 import Home from './pages/home'
 import Vote from './pages/vote'
+import Footer from './components/footer'
 
 const App: React.FC = () => (
     <BrowserRouter>
@@ -25,6 +26,8 @@ const App: React.FC = () => (
                 <Home />
             </Route>
         </Switch>
+
+        <Footer />
     </BrowserRouter>
 )
 

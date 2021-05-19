@@ -1,0 +1,21 @@
+.main-footer {
+  padding: 0 $padding-phone;
+}
+
+.main-footer--wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: $breakpoint-tablet) {
+  .main-footer { padding: 0 $padding-tablet; }
+  .main-footer--wrapper {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: $breakpoint-computer) {
+  .main-footer { padding: 0 $padding-computer; }
+}
