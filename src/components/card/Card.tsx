@@ -1,8 +1,8 @@
 import React from 'react'
-import ChildrenImpl from '../../props/ChildrenImpl'
+import GenericImpl from '../../props/GenericImpl'
 
-const Card: React.FC<ChildrenImpl> = ({children}) => (
-    <div className="card">
+const Card: React.FC<GenericImpl> = ({className, children}) => (
+    <div className={`card ${className}`}>
         {children}
     </div>
 )

@@ -1,7 +1,7 @@
 import React from 'react'
-import ChildrenImpl from '../../props/ChildrenImpl'
+import GenericImpl from '../../props/GenericImpl'
 
-interface ProgressBarImpl extends ChildrenImpl {
+interface ProgressBarImpl extends GenericImpl {
     percent: number
 }
 

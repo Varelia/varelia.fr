@@ -1,7 +1,7 @@
 import React from 'react'
-import ChildrenImpl from '../../../props/ChildrenImpl'
+import GenericImpl from '../../../props/GenericImpl'
 
-const ContainerItem: React.FC<ChildrenImpl> = ({children}) => (
+const ContainerItem: React.FC<GenericImpl> = ({children}) => (
     <div className="container--item">
         {children}
     </div>

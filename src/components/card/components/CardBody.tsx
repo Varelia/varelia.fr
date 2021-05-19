@@ -1,7 +1,7 @@
 import React, {CSSProperties} from 'react'
-import ChildrenImpl from '../../../props/ChildrenImpl'
+import GenericImpl from '../../../props/GenericImpl'
 
-interface CardBodyImpl extends ChildrenImpl {
+interface CardBodyImpl extends GenericImpl {
     style?: CSSProperties
     className?: string
 }
