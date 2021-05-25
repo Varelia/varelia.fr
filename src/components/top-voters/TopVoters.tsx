@@ -4,12 +4,13 @@ import Voter from './components/Voter'
 import {default as VoterModel} from '../../adapters/api/entity/Voter'
 import {fetchVotes} from '../../adapters/api'
 import FakeVoter from './components/FakeVoter'
+import {ListVoteResponse} from '../../adapters/api/response'
 
 const TopVoters: React.FC = () => {
     const [voters, setVoters] = useState<VoterModel[]>([])
 
     useEffect(() => {
-        fetchVotes(5).then(response => setVoters(response.data as VoterModel[]))
+        fetchVotes<ListVoteResponse>(5).then(response => setVoters(response.data.body))
     }, [])
 
     return <Card>
